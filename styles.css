@@ -1,4 +1,9 @@
 /* Add your CSS to this file */
+*{
+    font-size: 18px;
+    font-family: -apple-system,BlinkMacSystemFont,"SegoeUI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sansserif;
+    
+}
 body {
     margin: 0;
     font-size: 16px;
@@ -17,6 +22,7 @@ body {
 }
 
 /*Header*/
+
 .container>nav{
     display: flex;
     align-items:center;
@@ -30,10 +36,17 @@ body {
     text-decoration: none;
     padding: 5px;
 }
+.container>nav>ul>li>a:hover{
+    color: #5A67D8;     
+
+}
 
 
 
 /*Hero container*/
+.overview-hero{
+    background-color: #E2E8F0;
+}
 .overview-hero>.container{
     display: flex;
     max-width: 960px;
@@ -57,7 +70,13 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 50px;
+    
    
+}
+
+.learn-about>.container> h2{
+    color: #48BB78;
 }
 
 .cards{
@@ -68,11 +87,11 @@ body {
 
 .cards>.card{
     display: flex;
-    justify-content:space-evenly;
     flex-direction: column;
+    justify-content: center;
     
-    max-width: 300px;
-    max-height: 500px;
+    max-width: 250px;
+    max-height: 400px;
     width: 100%;
     padding: 10px;
     margin: 10px;
@@ -84,14 +103,25 @@ body {
     
 }
 
+.card-body>h3{
+    font-size: 21px;
+    color:#48BB78 ;
+
+}
+
 .card>img{
-    max-width: 300px;
-    max-height: 300px; 
+    max-width: 175px;
+    max-height: 175px; 
     padding-bottom: 10px;
+    align-self: center;
+    
 }
 
 
 /*testing*/
+.testing{
+    background-color: #4A5568
+}
 
 .testing>.container
 {
@@ -127,12 +157,18 @@ body {
     justify-content: center;
     flex-direction: column;
 }
+.stories>.container>h2{
+    padding-left: 30px;
+    color: #5A67D8;
+    
+}
 
 .stories>.container>article{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 
 .stories>.container>article>img{
     max-height: 175px;
@@ -146,13 +182,20 @@ body {
 .article-body{
     max-width: 700px;
 }
-
-.article-body>a{
+.article-body>h3{
+    font-size: 18px;
+}
+.article-body>p>a{
     text-decoration: none;
+    color: #5A67D8;
 }
 
 /*News Letter*/
+.newsletter{
+    background-color: #48BB78;
+}
 .newsletter>.container{
+    width:auto;
     display: flex;
     justify-content: center;
     align-items: center ;
@@ -184,6 +227,18 @@ body {
     border-radius: 5px;
     border: none;
     color: white;
+}
+
+.message{
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    padding-top: 20px;
+    width: 800px;
+    height: 100px;
+    font-size: 18px;
+
+    
 }
 footer>.container{
     background-color: #4A5568;
