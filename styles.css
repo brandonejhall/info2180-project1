@@ -76,6 +76,7 @@ body {
 }
 
 .learn-about>.container> h2{
+    padding-left: 50px;
     color: #48BB78;
 }
 
@@ -195,7 +196,7 @@ body {
     background-color: #48BB78;
 }
 .newsletter>.container{
-    width:auto;
+    width:500px;
     display: flex;
     justify-content: center;
     align-items: center ;
@@ -213,14 +214,16 @@ body {
 }
 
 .newsletter>.container>form>.form-group>input{
-    height: 39px;
+    height: 50px;
+    width:310px;
     border-radius: 5px;
     border: none;
 }
 
 .newsletter>.container>form>.btn{
     margin:5px;
-    height: 45px;
+    height: 53px;
+    width: 175px;
     padding-right: 30px;
     padding-left:30px;
     background-color: #5A67D8;
@@ -235,7 +238,7 @@ body {
     justify-self: center;
     padding-top: 20px;
     width: 800px;
-    height: 100px;
+    height: 20px;
     font-size: 18px;
 
     
